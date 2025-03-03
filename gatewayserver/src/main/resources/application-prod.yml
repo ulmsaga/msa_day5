@@ -6,6 +6,11 @@ spring:
     port: 5672
     username: guest
     password: guest
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: "http://localhost:9101/realms/master/protocol/openid-connect/certs"
 
 eureka:
   client:
