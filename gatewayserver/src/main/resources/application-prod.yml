@@ -10,7 +10,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          jwk-set-uri: "http://192.168.100.221:30368/realms/master/protocol/openid-connect/certs"
+          jwk-set-uri: "http://keycloak-service:8080/realms/master/protocol/openid-connect/certs"
 
 eureka:
   client:
